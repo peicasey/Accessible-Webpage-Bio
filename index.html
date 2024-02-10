@@ -4,11 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
-    <link rel="shortcut icon" type="image/png" href="logo.png"/>
+    <link rel="icon" type="image/x-icon" href="public/logo.png">
+    <link rel="shortcut icon" type="image/png" href="public/logo.png"/>
+
+    <script src="https://kit.fontawesome.com/3bfc84097c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <title>Casey Pei's Bio</title>
 </head>
 <body>
-    <h1>Casey Pei's Web Page :)</h1>
+    <header>
+        <a href="#">
+            <img src="public/logo.png" height="30px">
+        </a>
+        
+        <ul id="links" class="g-15">
+            <li><a href="#about">
+                about
+            </a></li>
+            <li><a href="#accessibility">
+                accessibility
+            </a></li>
+            <li><a href="#feedback">
+                feedback
+            </a></li>
+        </ul>
+    </header>
+    
+    <div id="landing-box">
+        <div class="flex align-bottom justify-between">
+            <div class="w-10vw h-10vh br-2"></div>
+        </div>
+        <div class="flex">
+            <div class="w-10vw bt-2 br-2"></div>
+            <div class="bt-2 w-80vw-2px">
+                <div class="p-5p">
+                    <div class="flex justify-end">
+                        <div class="flare">Accessible Web-Page Bio</div>
+                    </div>
+                    <div class="absolute mt-1vh z-1">
+                        <h1 id="big-boi" >Casey Pei</h1>
+                        <p class="m-0p green">
+                            I am a homie
+                        </p>
+    
+                    </div>
+                </div>
+                
+                <svg class="translate-5p unselectable" aria-hidden="true" viewbox="0 0 11 3">
+                    <text x="-1" y="3.25" text-anchor="center" font-size="4" fill="none" stroke-width=".03" stroke="#2e1e0e">CASEY PEI</text>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5p">
+        <h2 id="about">About Me</h2>
+        
+        <p>
+            kasdhjfksjldf
+        </p>
+
+        <div class="flex justify-between">
+            <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/peicasey" target="_blank" rel="noopener noreferrer">
+                    github
+                </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://linkedin.com/in/caseypei" target="_blank" rel="noopener noreferrer">
+                    linkedin
+                </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:peicasey@gmail.com" target="_blank" rel="noopener noreferrer">
+                    email
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="p-5p">
+        <h2 id="accessibility">Outlook on Accessibility</h2>
+        <p>
+
+        </p>
+    </div>
+    
+    <div class="p-5p">
+        <h2 id="feedback">Feedback</h2>
+        <form action="mailto:peicasey@gmail.com" method="post" enctype="text/plain">
+            <p>Name:</p>
+            <input type="text" name="name"><br>
+            <p>E-mail:</p>
+            <input type="text" name="mail"><br>
+            <p>Comment:</p>
+            <input type="text" name="comment" size="50"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <footer>
+        Created for Texas A&M University's 
+        <a href="https://catalog.tamu.edu/undergraduate/course-descriptions/csce/" target="_blank" rel="noopener noreferrer">
+            Accessible Computing (CSCE 432) Course
+        </a> 
+        in Spring 2024.
+    </footer>
 </body>
 </html>

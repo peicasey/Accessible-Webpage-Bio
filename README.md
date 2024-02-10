@@ -18,7 +18,7 @@ Make the page accessible based on what you know now about accessible documents a
   - At least one non-decorative (i.e. the image contains meaningful content)
   - At least one decorative
 - Form to collect information
-  - For example, forms can be created that send an email. 
+  - For example, [forms can be created that send an email](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_mail).
   - Using the email approach is fine if you don't know how to use scripting to collect data.
 - Lists
   - Semantic text emphasis (e.g. strong, em)
