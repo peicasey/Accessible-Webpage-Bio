@@ -4,6 +4,17 @@
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: rgb(0, 0, 0);
+    background: #ffd95c;
+}
+  
+::selection {
+    color: rgb(0, 0, 0);
+    background: #ffd95c;
+}
+
+
 body {
     padding: 0px;
     margin: 0px;
@@ -56,6 +67,10 @@ ul {
     display: flex;
 }
 
+.flex-grow {
+    flex-grow: 1;
+}
+
 .align-bottom {
     align-items: baseline;
 }
@@ -76,12 +91,20 @@ ul {
     gap: 15px;
 }
 
+.g-2vw {
+    gap: 5vw;
+}
+
 .absolute {
     position: absolute;
 }
 
 .w-10vw {
     width: 10vw;
+}
+
+.w-30vw {
+    width: 30vw;
 }
 
 .w-80vw-2px {
@@ -112,6 +135,10 @@ ul {
     margin-top: 1vh;
 }
 
+.mt-2vh {
+    margin-top: 5vh;
+}
+
 .br-2 {
     border-right: rgb(255, 179, 0) solid 2px;
 }
@@ -130,6 +157,10 @@ ul {
 
 .z--1 {
     z-index: 0;
+}
+
+.snapHeader {
+    cursor: pointer;
 }
 
 .green {
@@ -200,18 +231,75 @@ header {
     
     text-transform: uppercase;
     font-weight: bolder;
+    color: rgb(0, 0, 0);
+    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff;
+}
+
+#mePicture {
+    width: 30vw;
+    max-width: 15em;
+    border-radius: 25px;
+    border: #ce940c solid 2px;
+    box-shadow: 0 6px 20px 0 rgba(255, 187, 86, 0.2), 0 6px 20px 0 rgba(255, 187, 86, 0.2);
+}
+
+#feedback-section {
+    padding: 2vw 2vw;
+    background-color: #221d19;
+    border-radius: 25px;
+    border: #ce940c solid 1px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 187, 86, 0.2);
+}
+
+.feedback-header {
+    margin: 0px 0px;
+}
+
+.button-unemphasis {
+    border-radius: 25px;
+    border: rgb(229, 229, 229) solid 1px;
+
+    color: rgb(200, 200, 200);
+    background-color: #000000;
+    transition: 0.5s;
+}
+
+.button-unemphasis:hover {
     color: black;
-    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+    background-color: #d4e212;
+    transform: translateY(-2px);
+}
+
+.button {
+    border-radius: 25px;
+    border: rgb(255, 195, 85) solid 1px;
+
+    color: black;
+    font-weight: bold;
+    background-color: #d4e212;
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: black;
+    background-color: rgb(255, 195, 85);
+    transform: translateY(-2px);
+}
+
+input {
+    margin-bottom: 1vh;
 }
 
 text {
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
+    
 }
 
 footer {
     overflow: hidden;
     padding: 5% 5%;
+    margin-top: 10vh;
 
     background: rgb(13,9,7);
     background: -moz-linear-gradient(0deg, rgba(13,9,7,1) 0%, rgba(17,11,8,1) 46%, rgba(46,30,14,1) 74%, rgba(120,63,4,1) 87%, rgba(230,145,48,1) 96%, rgba(255,197,64,1) 100%);

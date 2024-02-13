@@ -21,7 +21,7 @@ Make the page accessible based on what you know now about accessible documents a
   - For example, [forms can be created that send an email](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_mail).
   - Using the email approach is fine if you don't know how to use scripting to collect data.
 - Lists
-  - Semantic text emphasis (e.g. strong, em)
+- Semantic text emphasis (e.g. strong, em)
 - (Optional) non-formatting table
 
 ### Cannot have
